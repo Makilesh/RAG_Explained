@@ -1,0 +1,35 @@
+
+
+
+
+RAG involves three steps namely: Retrieval, Augmentation and Generation.
+
+Retrieval - In this step, the system searches an external knowledge source, such as a vector database to find relevant information based on the user query.
+
+Augmentation - The retrieved information is then combined with the original user query to get the LLM prompt.
+
+Generation - The LLM processes the prompt and generates a response, integrating both its pre-trained knowledge and the retrieved information. This results in more accurate and contextually relevant responses.
+
+
+## How RAG Works: The Big Picture
+
+RAG has five main steps:
+
+Document Ingestion: Load your documents (e.g., text files, PDFs) into a system.
+
+Embedding Creation: Convert documents into numerical "fingerprints" (embeddings) that capture their meaning.
+
+Retrieval: Search for the most relevant documents based on a user’s question.
+
+Augmentation: Combine the user’s question with the retrieved documents.
+
+Generation: Use a language model to create a clear, accurate answer.
+
+
+## Why is RAG Important?
+
+Accuracy: It pulls real facts from documents, reducing errors.
+
+Flexibility: You can use it with any set of documents (e.g., your notes, articles, or manuals).
+
+Power: It combines the smarts of AI language models with the reliability of external data.
