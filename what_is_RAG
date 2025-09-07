@@ -1,6 +1,6 @@
 
 
-### RAG
+# RAG
 Retrival-Augmentation Generation aka RAG is like giving a chatbot an open textbook during an exam. Instead of relying only on memorized knowledge which it was trained on, it can look up current, accurate information before answering your questions.
 
 RAG enhances LLM responses by retrieving information from vector databases or external knowledge sources, then using that context to generate accurate, up-to-date responses.
@@ -8,18 +8,18 @@ RAG enhances LLM responses by retrieving information from vector databases or ex
 
 RAG involves three steps namely: Retrieval, Augmentation and Generation.
 
-Retrieval - In this step, the system searches an external knowledge source, such as a vector database to find relevant information based on the user query.
+Retrieval - Finds relevant information from an external knowledge source based on the user's query
 
-Augmentation - The retrieved information is then combined with the original user query to get the LLM prompt.
+Augmentation - The retrieved information is now combined with the original user query and is now set as the LLM prompt
 
-Generation - The LLM processes the prompt and generates a response, integrating both its pre-trained knowledge and the retrieved information. This results in more accurate and contextually relevant responses.
-
+Generation - The LLM now processes the prompt and generates a response which is more accurate and contextually relevant responses.
 
 ## How RAG Works: The Big Picture
 
 RAG has five main steps:
 
 Document Ingestion: Load your documents (e.g., text files, PDFs) into a system.
+
 
 Embedding Creation: Convert documents into numerical "fingerprints" (embeddings) that capture their meaning.
 
