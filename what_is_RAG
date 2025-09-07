@@ -1,5 +1,9 @@
 
 
+### RAG
+Retrival-Augmentation Generation aka RAG is like giving a chatbot an open textbook during an exam. Instead of relying only on memorized knowledge which it was trained on, it can look up current, accurate information before answering your questions.
+
+RAG enhances LLM responses by retrieving information from vector databases or external knowledge sources, then using that context to generate accurate, up-to-date responses.
 
 
 RAG involves three steps namely: Retrieval, Augmentation and Generation.
