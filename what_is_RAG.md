@@ -10,75 +10,73 @@ In short: RAG enhances LLM responses by retrieving relevant information from ext
 
 RAG involves three steps namely: Retrieval, Augmentation and Generation.
 
-Retrieval - Finds relevant information from an external knowledge source based on the user's query
+1. Retrieval - Finds relevant information from an external knowledge source based on the user's query
 
-Augmentation - The retrieved information is now combined with the original user query and is now set as the LLM prompt
+2. Augmentation - The retrieved information is now combined with the original user query and is now set as the LLM prompt
 
-Generation - The LLM now processes the prompt and generates a response which is more accurate and contextually relevant responses.
+3. Generation - The LLM now processes the prompt and generates a response which is more accurate and contextually relevant responses.
 
 ### How RAG Works: The Big Picture
 
-1)Prepare the knowledge Base
-RAG has five main steps:
 
-Document Ingestion: Collect and load documents (like PDFs, text files, or knowledge bases) into the system.
+RAG has over five main steps:
 
-Embedding Creation: Convert each document into dense vector representations, or embeddings, which capture semantic meaning.
+1. Document Ingestion: Collect and load documents (like PDFs, text files, or knowledge bases) into the system.
 
-Retrieval: Search for the most relevant documents based on a user’s question.
+2. Embedding Creation: Convert each document into dense vector representations, or embeddings, which capture semantic meaning.
 
-Augmentation: Combine the user’s question with the retrieved information to create a powerful prompt.
+3. Retrieval: Search for the most relevant documents based on a user’s question.
 
-Generation: Pass the augmented prompt to a language model, which produces a clear and accurate answer.
+4. Augmentation: Combine the user’s question with the retrieved information to create a powerful prompt.
 
-2)Answer the questions
+5. Generation: Pass the augmented prompt to a language model, which produces a clear and accurate answer.
 
 
 ### Why is RAG Important?
 
-Improves Accuracy: Pulls real facts from your data sources, reducing hallucinations (made-up answers).
+* Improves Accuracy: Pulls real facts from your data sources, reducing hallucinations (made-up answers).
 
-Highly Flexible: Works with any set of documents (e.g., company manuals, research papers, or personal notes).
+* Highly Flexible: Works with any set of documents (e.g., company manuals, research papers, or personal notes).
 
-More Reliable: Combines the reasoning power of LLMs with the factual strength of external knowledge.
+* More Reliable: Combines the reasoning power of LLMs with the factual strength of external knowledge.
 
 ### Challenges RAG Helps With
 
-The Hallucination Problem: LLMs often “make things up.” RAG grounds responses in real documents
+* The Hallucination Problem: LLMs often “make things up.” RAG grounds responses in real documents
 
-Knowledge Cutoffs: Models stop at a certain training date. RAG enables access to recent information.
+* Knowledge Cutoffs: Models stop at a certain training date. RAG enables access to recent information.
 
-No Access to Private Information: RAG allows integration with your own custom datasets.
+* No Access to Private Information: RAG allows integration with your own custom datasets.
 
-Expensive Updates: Instead of retraining, you just update the knowledge base.
+* Expensive Updates: Instead of retraining, you just update the knowledge base.
 
-Greater data security:
+* Greater data security:
 
-Access to current domain-specific data
+* Access to current domain-specific data
 
-Cost-efficient AI implementation and AI scaling
+* Cost-efficient AI implementation and AI scaling
 
-Scalability
+* Scalability
 
-Bias and Noise
+* Bias and Noise
 
-### rag usecases
+### Rag usecases
 
-Specialized chatbots and virtual assistants
+* Specialized chatbots and virtual assistants
 
-Research
+* Research
 
-Content generation
+* Content generation
 
-Market analysis and product development
+* Market analysis and product development
 
-Knowledge engines
+* Knowledge engines
 
-Recommendation services 
+* Recommendation services 
 
-### working example:
+### Working example:
 
-The user submits a prompt.
+1. The user submits a prompt.
 
 The information retrieval model queries the knowledge base for relevant data.
 
