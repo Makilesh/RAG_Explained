@@ -78,10 +78,10 @@ RAG has over five main steps:
 
 1. The user submits a prompt.
 
-The information retrieval model queries the knowledge base for relevant data.
+2. The information retrieval model queries the knowledge base for relevant data.
 
-Relevant information is returned from the knowledge base to the integration layer.
+3. Relevant information is returned from the knowledge base to the integration layer.
 
-The RAG system engineers an augmented prompt to the LLM with enhanced context from the retrieved data.
+4. The RAG system engineers an augmented prompt to the LLM with enhanced context from the retrieved data.
 
-The LLM generates an output and returns an output to the user.
+5. The LLM generates an output and returns an output to the user.
