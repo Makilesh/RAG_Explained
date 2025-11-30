@@ -1,7 +1,7 @@
 langchain
 sentence-transformers
 faiss-cpu
-openai
+google-generativeai
 transformers
 numpy
 torch

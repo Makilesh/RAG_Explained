@@ -4,13 +4,13 @@ from sentence_transformers import SentenceTransformer
 from transformers import pipeline
 import numpy as np
 import faiss
-import openai
+import google.generativeai as genai
 import os
 
 # -------------------------------
-# Step 0: Initialize OpenAI API (optional, for advanced generation)
+# Step 0: Initialize Gemini API (optional, for advanced generation)
 # -------------------------------
-openai.api_key = os.getenv("OPENAI_API_KEY")
+genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
 
 # -------------------------------
 # Step 1: Document Ingestion
@@ -46,21 +46,19 @@ prompt = f"Based on this info: {retrieved_text}\nAnswer the question: {query}"
 print("\n📝 Augmented Prompt:\n", prompt)
 
 # -------------------------------
-# Step 5: Generation (Local with distilgpt2 for free, or OpenAI for better quality)
+# Step 5: Generation (Local with distilgpt2 for free, or Gemini for better quality)
 # -------------------------------
-use_openai = input("Use OpenAI for generation? (y/n, default n): ").lower() == 'y'
+use_gemini = input("Use Gemini API for generation? (y/n, default n): ").lower() == 'y'
 
-# Check if OpenAI key is available
-if use_openai and not openai.api_key:
-    print("⚠️ No OpenAI API key found. Using local model instead.")
-    use_openai = False
+# Check if Gemini key is available
+if use_gemini and not os.getenv("GEMINI_API_KEY"):
+    print("⚠️ No Gemini API key found. Using local model instead.")
+    use_gemini = False
 
-if use_openai:
-    response = openai.ChatCompletion.create(
-        model="gpt-4o-mini",  # lightweight and affordable
-        messages=[{"role": "user", "content": prompt}]
-    )
-    print("\n💡 Final Answer (OpenAI):\n", response.choices[0].message.content)
+if use_gemini:
+    model = genai.GenerativeModel('gemini-1.5-flash')  # fast and efficient
+    response = model.generate_content(prompt)
+    print("\n💡 Final Answer (Gemini):\n", response.text)
 else:
     generator = pipeline("text-generation", model="distilgpt2")  # lightweight free model
     response = generator(prompt, max_length=80, num_return_sequences=1)[0]["generated_text"]
