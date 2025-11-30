@@ -1,11 +1,15 @@
 # 📦 Import all packages at the start
-from langchain.document_loaders import TextLoader
+from langchain_community.document_loaders import TextLoader
 from sentence_transformers import SentenceTransformer
 from transformers import pipeline
 import numpy as np
 import faiss
 import google.generativeai as genai
 import os
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 # -------------------------------
 # Step 0: Initialize Gemini API (optional, for advanced generation)
@@ -17,8 +21,9 @@ genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
 # -------------------------------
 loader = TextLoader("knowledge.txt")
 documents = loader.load()
-texts = [doc.page_content for doc in documents]
-print("✅ Loaded documents:", texts)
+# Split into individual lines for better retrieval
+texts = [line.strip() for line in documents[0].page_content.split('\n') if line.strip()]
+print("✅ Loaded documents:", len(texts), "chunks")
 
 # -------------------------------
 # Step 2: Embedding Creation
@@ -56,7 +61,7 @@ if use_gemini and not os.getenv("GEMINI_API_KEY"):
     use_gemini = False
 
 if use_gemini:
-    model = genai.GenerativeModel('gemini-1.5-flash')  # fast and efficient
+    model = genai.GenerativeModel('gemini-2.5-flash')  # fast and efficient
     response = model.generate_content(prompt)
     print("\n💡 Final Answer (Gemini):\n", response.text)
 else:
