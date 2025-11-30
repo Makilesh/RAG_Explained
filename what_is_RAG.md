@@ -21,7 +21,7 @@ RAG involves three steps namely: Retrieval, Augmentation and Generation.
 
 RAG has over five main steps:
 
-1. Document Ingestion: Collect and load documents (like PDFs, text files, or knowledge bases) into the system.
+1. Document Ingestion: Load your source materials (like PDFs, text files, or knowledge bases) into the system.
 
 2. Embedding Creation: Convert each document into dense vector representations, or embeddings, which capture semantic meaning.
 
