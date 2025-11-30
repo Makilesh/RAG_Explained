@@ -1,6 +1,6 @@
 # RAG from Scratch
 
-Ever wondered how ChatGPT could answer questions about *your* documents? That's RAG. This tutorial breaks it down into simple, runnable code that actually works.
+Ever wondered how ChatGPT could answer questions about *your* documents? That's [RAG](what_is_RAG.md). This tutorial breaks it down into simple, runnable code that actually works.
 
 **What you're getting:**
 - Build a real RAG system in under 100 lines
@@ -17,6 +17,13 @@ Complete_RAG_implementation.py   ← The full system (ready to run)
 knowledge.txt                    ← Your test data
 RAG_knowledge.md                 ← Advanced stuff and FAQs
 ```
+
+**Quick access:**
+- 📖 [What is RAG?](what_is_RAG.md) - Start here for concepts
+- 📓 [Step-by-step Notebook](How_does_RAG_work.ipynb) - Interactive learning
+- 🚀 [Complete Implementation](Complete_RAG_implementation.py) - Production code
+- 📚 [Advanced Guide](RAG_knowledge.md) - Deep dive & FAQs
+- 📄 [Sample Data](knowledge.txt) - Test knowledge base
 
 ## Get Running
 
@@ -48,13 +55,13 @@ Ask it: *"What do elephants use their trunks for?"*
 ## How to Use This Repo
 
 **Never touched RAG before?**  
-Read `what_is_RAG.md` → Open `How_does_RAG_work.ipynb` → Run each cell and watch what happens
+Read [`what_is_RAG.md`](what_is_RAG.md) → Open [`How_does_RAG_work.ipynb`](How_does_RAG_work.ipynb) → Run each cell and watch what happens
 
 **Just want to see it work?**  
-Run `Complete_RAG_implementation.py` right now. It works out of the box.
+Run [`Complete_RAG_implementation.py`](Complete_RAG_implementation.py) right now. It works out of the box.
 
 **Building something real?**  
-Check `RAG_knowledge.md` for production tips, common pitfalls, and how to scale.
+Check [`RAG_knowledge.md`](RAG_knowledge.md) for production tips, common pitfalls, and how to scale.
 
 ## What Makes This Different
 
@@ -83,9 +90,11 @@ Each step has its own section in the notebook with runnable code.
 Once you're running, ask:
 - "What do elephants use their trunks for?"
 - "Tell me about honey"
-- Or add your own docs to `knowledge.txt` and ask about those
+- Or add your own docs to [`knowledge.txt`](knowledge.txt) and ask about those
 
 ## What is RAG, Really?
+
+> 💡 **[Full explanation in what_is_RAG.md →](what_is_RAG.md)**
 
 You know how ChatGPT sometimes makes stuff up? RAG fixes that by letting it "look up" answers in your documents before responding.
 
