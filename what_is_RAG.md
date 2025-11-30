@@ -94,3 +94,15 @@ While RAG has three core concepts, the implementation involves five detailed ste
 5. **LLM generates output** - Creates a natural language answer based on actual policy documents
 
 6. **User receives accurate answer** - Gets factual response grounded in company data
+
+---
+
+## Next Steps
+
+Ready to try it yourself?
+
+1. 📓 **[Run the Interactive Notebook](How_does_RAG_work.ipynb)** - Learn by doing, step-by-step
+2. 🚀 **[See the Complete Code](Complete_RAG_implementation.py)** - Production-ready implementation
+3. 📚 **[Explore Advanced Topics](RAG_knowledge.md)** - Deep dive into optimization and scaling
+
+[← Back to README](README.md)
