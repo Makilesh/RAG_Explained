@@ -100,12 +100,6 @@ Open an issue. I actually read them.
 
 Or fork it and make it better. That works too.
 
-## License
-
-MIT. Do whatever you want with it.
-
----
-
 If this helped you build something, drop a star ⭐ 
 
 **Resources that helped build this:**
