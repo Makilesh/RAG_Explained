@@ -2,21 +2,15 @@
 
 Ever wondered how ChatGPT could answer questions about *your* documents? That's [RAG](what_is_RAG.md). This tutorial breaks it down into simple, runnable code that actually works.
 
-**What you're getting:**
-- Build a real RAG system in under 100 lines
-- Works on your laptop (no cloud required)
-- Free API option included
-- Every line explained like you're learning Python for the first time
+
 
 ## The Files
 
-```
-what_is_RAG.md                    ← Start here if RAG is new to you
-How_does_RAG_work.ipynb          ← Interactive notebook (run each cell)
-Complete_RAG_implementation.py   ← The full system (ready to run)
-knowledge.txt                    ← Your test data
-RAG_knowledge.md                 ← Advanced stuff and FAQs
-```
+- [`what_is_RAG.md`](what_is_RAG.md) - Start here if RAG is new to you
+- [`How_does_RAG_work.ipynb`](How_does_RAG_work.ipynb) - Interactive notebook (run each cell)
+- [`Complete_RAG_implementation.py`](Complete_RAG_implementation.py) - The full system (ready to run)
+- [`knowledge.txt`](knowledge.txt) - Your test data
+- [`RAG_knowledge.md`](RAG_knowledge.md) - Advanced stuff and FAQs
 
 **Quick access:**
 - 📖 [What is RAG?](what_is_RAG.md) - Start here for concepts
