@@ -10,8 +10,10 @@ Ever wondered how ChatGPT could answer questions about *your* documents? That's 
 
 - [Quick Start](#get-running)
 - [See It in Action](#see-it-in-action)
+- [Demo & Screenshots](#-demo--screenshots)
 - [How to Use This Repo](#how-to-use-this-repo)
 - [What Makes This Different](#what-makes-this-different)
+- [RAG Pipeline Workflow](#-rag-pipeline-workflow)
 - [The 5-Step Breakdown](#the-5-step-breakdown)
 - [What is RAG?](#what-is-rag-really)
 - [Resources](#issues-questions)
@@ -83,6 +85,38 @@ Use Gemini API for generation? (y/n, default n): y
 Elephants use their trunks for smelling, breathing, trumpeting, drinking, and grabbing things.
 ```
 
+## 📸 Demo & Screenshots
+
+<!-- 
+TO ADD YOUR CONTENT:
+1. Record a demo video and upload to YouTube/Loom
+2. Replace the placeholder link below with your video URL
+3. Take screenshots of your RAG system running
+4. Add images to the repo and replace the placeholder paths below
+-->
+
+### 🎥 Video Demo
+
+> **Coming Soon:** Watch the RAG system in action!  
+> <!-- Replace this with: [![Demo Video](thumbnail.png)](your-video-url) -->
+
+### 📷 Screenshots
+
+**RAG System in Action**
+<!-- Add your screenshot here -->
+![RAG System Running](https://via.placeholder.com/800x400/e1f5ff/01579b?text=RAG+System+in+Action)
+*The complete RAG pipeline processing a query*
+
+**Example Query & Response**
+<!-- Add your screenshot here -->
+![Query Response Example](https://via.placeholder.com/800x400/f3e5f5/4a148c?text=Example+Query+and+Response)
+*Sample question about elephants with retrieved context and generated answer*
+
+**Interactive Notebook**
+<!-- Add your screenshot here -->
+![Notebook Interface](https://via.placeholder.com/800x400/fff3e0/e65100?text=Jupyter+Notebook+Interface)
+*Step-by-step execution in the Jupyter notebook*
+
 ---
 
 ## How to Use This Repo
@@ -105,6 +139,24 @@ No fluff. No 500-line enterprise boilerplate. Just:
 - **Your choice:** Gemini API for quality, or free local model
 
 Built with: LangChain, FAISS, Sentence Transformers, Google Gemini
+
+## 🔄 RAG Pipeline Workflow
+
+Here's how the magic happens - visualized:
+
+```mermaid
+flowchart TD
+    A[📄 Step 1: Ingest<br/>Load Documents] --> B[🔢 Step 2: Embed<br/>Convert to Vectors]
+    B --> C[🔍 Step 3: Retrieve<br/>Find Relevant Chunks]
+    C --> D[➕ Step 4: Augment<br/>Combine Question + Context]
+    D --> E[✨ Step 5: Generate<br/>LLM Response]
+    
+    style A fill:#e1f5ff,stroke:#01579b,stroke-width:2px
+    style B fill:#f3e5f5,stroke:#4a148c,stroke-width:2px
+    style C fill:#fff3e0,stroke:#e65100,stroke-width:2px
+    style D fill:#e8f5e9,stroke:#1b5e20,stroke-width:2px
+    style E fill:#fce4ec,stroke:#880e4f,stroke-width:2px
+```
 
 ## The 5-Step Breakdown
 
