@@ -6,17 +6,6 @@
 
 Ever wondered how ChatGPT could answer questions about *your* documents? That's [RAG](what_is_RAG.md). This tutorial breaks it down into simple, runnable code that actually works.
 
-## Contents
-
-- [Quick Start](#get-running)
-- [See It in Action](#see-it-in-action)
-- [How to Use This Repo](#how-to-use-this-repo)
-- [What Makes This Different](#what-makes-this-different)
-- [The 5-Step Breakdown](#the-5-step-breakdown)
-- [What is RAG?](#what-is-rag-really)
-- [Resources](#issues-questions)
-
----
 
 ## The Files
 
@@ -32,6 +21,21 @@ Ever wondered how ChatGPT could answer questions about *your* documents? That's 
 - 🚀 [Complete Implementation](Complete_RAG_implementation.py) - Production code
 - 📚 [Advanced Guide](RAG_knowledge.md) - Deep dive & FAQs
 - 📄 [Sample Data](knowledge.txt) - Test knowledge base
+
+---
+
+## Contents
+
+- [Quick Start](#get-running)
+- [See It in Action](#see-it-in-action)
+- [How to Use This Repo](#how-to-use-this-repo)
+- [What Makes This Different](#what-makes-this-different)
+- [The 5-Step Breakdown](#the-5-step-breakdown)
+- [What is RAG?](#what-is-rag-really)
+- [Resources](#issues-questions)
+
+
+---
 
 ## Get Running
 
