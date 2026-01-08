@@ -99,18 +99,19 @@ graph LR
 
 ```mermaid
 graph TD
-	A[1. User submits a prompt: "What are the company's vacation policies?"] --> 
-	B[2. Retrieval system queries: Searches the knowledge base] --> 
-	C[3. Relevant info returns: Finds HR policy sections] --> 
-	D[4. RAG creates augmented prompt: Combines question with context] --> 
-	E[5. LLM generates output: Answers based on policy docs] --> 
-	F[6. User receives accurate answer: Factual, company-grounded]
-	style A fill:#e3f2fd,stroke:#1565c0,stroke-width:2px,color:#000
-	style B fill:#bbdefb,stroke:#1565c0,stroke-width:2px,color:#000
-	style C fill:#b2ebf2,stroke:#00838f,stroke-width:2px,color:#000
-	style D fill:#a5d6a7,stroke:#2e7d32,stroke-width:2px,color:#000
-	style E fill:#81c784,stroke:#2e7d32,stroke-width:2px,color:#000
-	style F fill:#c8e6c9,stroke:#2e7d32,stroke-width:2px,color:#000
+    A[1. User submits a prompt: "What are the company's vacation policies?"] --> 
+    B[2. Retrieval system queries: Searches the knowledge base] --> 
+    C[3. Relevant info returns: Finds HR policy sections] --> 
+    D[4. RAG creates augmented prompt: Combines question with context] --> 
+    E[5. LLM generates output: Answers based on policy docs] --> 
+    F[6. User receives accurate answer: Factual, company-grounded]
+    style A fill:#e3f2fd,stroke:#1565c0,stroke-width:2px,color:#000
+    style B fill:#bbdefb,stroke:#1565c0,stroke-width:2px,color:#000
+    style C fill:#b2ebf2,stroke:#00838f,stroke-width:2px,color:#000
+    style D fill:#a5d6a7,stroke:#2e7d32,stroke-width:2px,color:#000
+    style E fill:#81c784,stroke:#2e7d32,stroke-width:2px,color:#000
+    style F fill:#c8e6c9,stroke:#2e7d32,stroke-width:2px,color:#000
+```
 ```
 
 ---
