@@ -27,16 +27,16 @@ RAG involves three fundamental steps:
 While RAG has three core concepts, the implementation involves five detailed steps:
 
 ```mermaid
-graph LR
-	A[📄 Document Ingestion] --> B[🔢 Embedding Creation]
-	B --> C[🔍 Retrieval]
-	C --> D[➕ Augmentation]
-	D --> E[✍️ Generation]
-	style A fill:#e3f2fd,stroke:#1565c0,stroke-width:2px,color:#000
-	style B fill:#bbdefb,stroke:#1565c0,stroke-width:2px,color:#000
-	style C fill:#b2ebf2,stroke:#00838f,stroke-width:2px,color:#000
-	style D fill:#a5d6a7,stroke:#2e7d32,stroke-width:2px,color:#000
-	style E fill:#81c784,stroke:#2e7d32,stroke-width:2px,color:#000
+graph TD
+    A[📄 Document Ingestion] --> B[🔢 Embedding Creation]
+    B --> C[🔍 Retrieval]
+    C --> D[➕ Augmentation]
+    D --> E[✍️ Generation]
+    style A fill:#e3f2fd,stroke:#1565c0,stroke-width:2px,color:#000
+    style B fill:#bbdefb,stroke:#1565c0,stroke-width:2px,color:#000
+    style C fill:#b2ebf2,stroke:#00838f,stroke-width:2px,color:#000
+    style D fill:#a5d6a7,stroke:#2e7d32,stroke-width:2px,color:#000
+    style E fill:#81c784,stroke:#2e7d32,stroke-width:2px,color:#000
 ```
 
 1. **Document Ingestion** - Load your source materials (like PDFs, text files, or knowledge bases) into the system
