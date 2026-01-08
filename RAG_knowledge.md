@@ -1,6 +1,12 @@
+# 📖 RAG Knowledge Base
+
+## 🔄 RAG Pipeline Overview
+
+```
 User Question → Retrieval System → Document Chunks → Generator → Final Answer
      ↑               ↓                    ↓              ↓
  [Question]    [Find Similar]     [Relevant Info]   [Human-like Response]
+```
 
 ## 📊 Visual Flow Diagram
 
@@ -22,19 +28,11 @@ graph TD
     style A fill:#e1f5fe
     style E fill:#f3e5f5
     style J fill:#e8f5e8
+```
 
+## 📋 ASCII Pipeline Diagrams
 
-
-
-
-
-
-
-
-
-
-
-
+```
 DOCUMENT PROCESSING PIPELINE:
 ┌─────────────┐    ┌──────────────┐    ┌─────────────┐    ┌──────────────┐
 │   📄 Docs   │───▶│ Split Chunks │───▶│ Embeddings  │───▶│ Vector Store │
@@ -49,24 +47,15 @@ QUESTION ANSWERING PIPELINE:
                    ┌──────────────┐                      ┌──────────────┐
                    │ Vector Store │                      │💬 Final Answer│
                    └──────────────┘                      └──────────────┘
+```
 
+---
 
+## 🎯 Advanced RAG Techniques
 
-
-
-
-
-
-
-
-
-
-Advanced RAG Techniques 🎯
-1. Hierarchical RAG
-
-First find relevant documents, then find relevant chunks
-
-Better for large document collections
+### 1. Hierarchical RAG
+- First find relevant documents, then find relevant chunks
+- Better for large document collections
 
 ### 2. Conversational RAG
 - Remember conversation history
