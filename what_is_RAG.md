@@ -99,12 +99,12 @@ graph LR
 
 ```mermaid
 graph TD
-	A[1. User submits a prompt<br/>"What are the company's vacation policies?"] --> 
-	B[2. Retrieval system queries<br/>Searches the knowledge base for relevant documents] --> 
-	C[3. Relevant information returns<br/>Finds the HR policy document sections] --> 
-	D[4. RAG system creates augmented prompt<br/>Combines the question with retrieved context] --> 
-	E[5. LLM generates output<br/>Creates a natural language answer based on actual policy documents] --> 
-	F[6. User receives accurate answer<br/>Gets factual response grounded in company data]
+	A[1. User submits a prompt: "What are the company's vacation policies?"] --> 
+	B[2. Retrieval system queries: Searches the knowledge base] --> 
+	C[3. Relevant info returns: Finds HR policy sections] --> 
+	D[4. RAG creates augmented prompt: Combines question with context] --> 
+	E[5. LLM generates output: Answers based on policy docs] --> 
+	F[6. User receives accurate answer: Factual, company-grounded]
 	style A fill:#e3f2fd,stroke:#1565c0,stroke-width:2px,color:#000
 	style B fill:#bbdefb,stroke:#1565c0,stroke-width:2px,color:#000
 	style C fill:#b2ebf2,stroke:#00838f,stroke-width:2px,color:#000
