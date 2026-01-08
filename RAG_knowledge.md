@@ -25,9 +25,16 @@ graph TD
     
     I --> J[💬 Final Answer]
     
-    style A fill:#e1f5fe
-    style E fill:#f3e5f5
-    style J fill:#e8f5e8
+    style A fill:#e3f2fd,stroke:#1976d2,stroke-width:3px
+    style B fill:#ffe0b2,stroke:#f57c00,stroke-width:3px
+    style C fill:#f3e5f5,stroke:#7b1fa2,stroke-width:3px
+    style D fill:#b2ebf2,stroke:#0097a7,stroke-width:3px
+    style E fill:#fce4ec,stroke:#c2185b,stroke-width:3px
+    style F fill:#e1bee7,stroke:#8e24aa,stroke-width:3px
+    style G fill:#fff9c4,stroke:#f9a825,stroke-width:3px
+    style H fill:#ffccbc,stroke:#e64a19,stroke-width:3px
+    style I fill:#c8e6c9,stroke:#388e3c,stroke-width:3px
+    style J fill:#a5d6a7,stroke:#2e7d32,stroke-width:3px,color:#000
 ```
 
 ## 📋 ASCII Pipeline Diagrams
