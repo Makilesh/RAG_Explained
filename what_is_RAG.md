@@ -21,9 +21,23 @@ RAG involves three fundamental steps:
 
 ---
 
+
 ## How RAG Actually Works: The 5-Step Pipeline
 
 While RAG has three core concepts, the implementation involves five detailed steps:
+
+```mermaid
+graph LR
+	A[📄 Document Ingestion] --> B[🔢 Embedding Creation]
+	B --> C[🔍 Retrieval]
+	C --> D[➕ Augmentation]
+	D --> E[✍️ Generation]
+	style A fill:#e3f2fd,stroke:#1565c0,stroke-width:2px,color:#000
+	style B fill:#bbdefb,stroke:#1565c0,stroke-width:2px,color:#000
+	style C fill:#b2ebf2,stroke:#00838f,stroke-width:2px,color:#000
+	style D fill:#a5d6a7,stroke:#2e7d32,stroke-width:2px,color:#000
+	style E fill:#81c784,stroke:#2e7d32,stroke-width:2px,color:#000
+```
 
 1. **Document Ingestion** - Load your source materials (like PDFs, text files, or knowledge bases) into the system
 
@@ -83,17 +97,21 @@ While RAG has three core concepts, the implementation involves five detailed ste
 
 ## How RAG Works: Step-by-Step Example
 
-1. **User submits a prompt** - "What are the company's vacation policies?"
-
-2. **Retrieval system queries** - Searches the knowledge base for relevant documents
-
-3. **Relevant information returns** - Finds the HR policy document sections
-
-4. **RAG system creates augmented prompt** - Combines the question with retrieved context
-
-5. **LLM generates output** - Creates a natural language answer based on actual policy documents
-
-6. **User receives accurate answer** - Gets factual response grounded in company data
+```mermaid
+graph TD
+	A[1. User submits a prompt<br/>"What are the company's vacation policies?"] --> 
+	B[2. Retrieval system queries<br/>Searches the knowledge base for relevant documents] --> 
+	C[3. Relevant information returns<br/>Finds the HR policy document sections] --> 
+	D[4. RAG system creates augmented prompt<br/>Combines the question with retrieved context] --> 
+	E[5. LLM generates output<br/>Creates a natural language answer based on actual policy documents] --> 
+	F[6. User receives accurate answer<br/>Gets factual response grounded in company data]
+	style A fill:#e3f2fd,stroke:#1565c0,stroke-width:2px,color:#000
+	style B fill:#bbdefb,stroke:#1565c0,stroke-width:2px,color:#000
+	style C fill:#b2ebf2,stroke:#00838f,stroke-width:2px,color:#000
+	style D fill:#a5d6a7,stroke:#2e7d32,stroke-width:2px,color:#000
+	style E fill:#81c784,stroke:#2e7d32,stroke-width:2px,color:#000
+	style F fill:#c8e6c9,stroke:#2e7d32,stroke-width:2px,color:#000
+```
 
 ---
 
