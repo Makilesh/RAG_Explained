@@ -1,14 +1,6 @@
 # 📖 RAG Knowledge Base
 
-## 🔄 RAG Pipeline Overview
-
-```
-User Question → Retrieval System → Document Chunks → Generator → Final Answer
-     ↑               ↓                    ↓              ↓
- [Question]    [Find Similar]     [Relevant Info]   [Human-like Response]
-```
-
-## 📊 Visual Flow Diagram
+## � RAG Visual Flow Diagram
 
 ```mermaid
 graph TD
@@ -35,25 +27,6 @@ graph TD
     style H fill:#26c6da,stroke:#00838f,stroke-width:2px,color:#000
     style I fill:#a5d6a7,stroke:#2e7d32,stroke-width:2px,color:#000
     style J fill:#81c784,stroke:#2e7d32,stroke-width:2px,color:#000
-```
-
-## 📋 ASCII Pipeline Diagrams
-
-```
-DOCUMENT PROCESSING PIPELINE:
-┌─────────────┐    ┌──────────────┐    ┌─────────────┐    ┌──────────────┐
-│   📄 Docs   │───▶│ Split Chunks │───▶│ Embeddings  │───▶│ Vector Store │
-└─────────────┘    └──────────────┘    └─────────────┘    └──────────────┘
-
-QUESTION ANSWERING PIPELINE:
-┌─────────────┐    ┌──────────────┐    ┌─────────────┐    ┌──────────────┐
-│❓ Question  │───▶│ Find Similar │───▶│ Get Context │───▶│✍️ Generate   │
-└─────────────┘    └──────────────┘    └─────────────┘    └──────────────┘
-                           ▲                                      │
-                           │                                      ▼
-                   ┌──────────────┐                      ┌──────────────┐
-                   │ Vector Store │                      │💬 Final Answer│
-                   └──────────────┘                      └──────────────┘
 ```
 
 ---
