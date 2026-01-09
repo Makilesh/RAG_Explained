@@ -131,7 +131,7 @@ Once you're running, ask:
 
 ## What is RAG, Really?
 
-> 💡 **[Full explanation in what_is_RAG.md →](what_is_RAG.md)**
+**[Full explanation in what_is_RAG.md →](what_is_RAG.md)**
 
 You know how ChatGPT sometimes makes stuff up? RAG fixes that by letting it "look up" answers in your documents before responding.
 
