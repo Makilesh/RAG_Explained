@@ -7,4 +7,3 @@ transformers
 numpy
 torch
 python-dotenv
-python-dotenv
