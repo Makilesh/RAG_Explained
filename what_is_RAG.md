@@ -51,101 +51,71 @@ graph TD
 
 ---
 
-## 📊 RAG Visual Flow Diagram
-
-```mermaid
-graph TD
-    A[📄 Input Documents] --> B[✂️ Split into Chunks]
-    B --> C[🔢 Create Embeddings]
-    C --> D[🗄️ Store in Vector Database]
-    
-    E[❓ User Question] --> F[🔍 Query Embedding]
-    F --> G[🎯 Similarity Search]
-    G --> H[📋 Retrieve Top Documents]
-    
-    H --> I[✍️ Generate Response]
-    D --> G
-    
-    I --> J[💬 Final Answer]
-    
-    style A fill:#e3f2fd,stroke:#1565c0,stroke-width:2px,color:#000
-    style B fill:#bbdefb,stroke:#1565c0,stroke-width:2px,color:#000
-    style C fill:#90caf9,stroke:#1565c0,stroke-width:2px,color:#000
-    style D fill:#64b5f6,stroke:#1565c0,stroke-width:2px,color:#000
-    style E fill:#b2ebf2,stroke:#00838f,stroke-width:2px,color:#000
-    style F fill:#80deea,stroke:#00838f,stroke-width:2px,color:#000
-    style G fill:#4dd0e1,stroke:#00838f,stroke-width:2px,color:#000
-    style H fill:#26c6da,stroke:#00838f,stroke-width:2px,color:#000
-    style I fill:#a5d6a7,stroke:#2e7d32,stroke-width:2px,color:#000
-    style J fill:#81c784,stroke:#2e7d32,stroke-width:2px,color:#000
-```
-
----
-
 ## Why is RAG Important?
 
-* Improves Accuracy: Pulls real facts from your data sources, reducing hallucinations (made-up answers).
+**🎯 Improves Accuracy** - Pulls real facts from your data sources, reducing hallucinations (made-up answers)
 
-* Highly Flexible: Works with any set of documents (e.g., company manuals, research papers, or personal notes).
+**🔧 Highly Flexible** - Works with any set of documents (company manuals, research papers, or personal notes)
 
-* More Reliable: Combines the reasoning power of LLMs with the factual strength of external knowledge.
+**✅ More Reliable** - Combines the reasoning power of LLMs with the factual strength of external knowledge
 
-### Challenges RAG Helps With
+**💰 Cost-Effective** - Update knowledge by simply adding documents instead of expensive model retraining
 
-* The Hallucination Problem: LLMs often “make things up.” RAG grounds responses in real documents
+**🔒 Privacy-Friendly** - Run locally with your sensitive data without sending it to external APIs
 
-* Knowledge Cutoffs: Models stop at a certain training date. RAG enables access to recent information.
+### Key Challenges RAG Solves
 
-* No Access to Private Information: RAG allows integration with your own custom datasets.
+**🎭 The Hallucination Problem** - LLMs often "make things up." RAG grounds responses in real documents
 
-* Expensive Updates: Instead of retraining, you just update the knowledge base.
+**📅 Knowledge Cutoffs** - Models stop at a certain training date. RAG enables access to recent information
 
-* Greater data security:
+**🔐 Private Data Access** - RAG allows integration with your own custom datasets that weren't in the model's training data
 
-* Access to current domain-specific data
-
-* Cost-efficient AI implementation and AI scaling
-
-* Scalability
-
-* Bias and Noise
-
-## RAG Use Cases
-
-* **Specialized Chatbots & Virtual Assistants** - Customer support with company-specific knowledge
-
-* **Research & Analysis** - Query large document collections instantly
-
-* **Content Generation** - Create content grounded in specific sources
-
-* **Market Analysis & Product Development** - Analyze documents for insights
-
-* **Knowledge Engines** - Enterprise search with intelligent answers
-
-* **Recommendation Services** - Personalized suggestions based on data
+**💵 Expensive Model Updates** - Instead of costly retraining, you just update the knowledge base documents
 
 ---
 
-## How RAG Works: Step-by-Step Example
+## 🚀 Common Use Cases
 
+- **Customer Support Bots** - Answer questions using company documentation
+- **Research Assistants** - Query through academic papers and reports
+- **Enterprise Search** - Find information across company knowledge bases
+- **Content Creation** - Generate articles based on source materials
 
-1. **User submits a prompt:**
-    What are the company vacation policies?
+*Want to explore more advanced applications? Check out [RAG_knowledge.md](RAG_knowledge.md#-common-rag-use-cases)*
 
-2. **Retrieval system queries:**
-    Searches the knowledge base
+---
 
-3. **Relevant info returns:**
-    Finds HR policy sections
+## 💡 Real-World Example: RAG in Action
 
-4. **RAG creates augmented prompt:**
-    Combines question with context
+Let's see how RAG handles a question about company policies:
 
-5. **LLM generates output:**
-    Answers based on policy docs
+**❓ User asks:** "What are the company vacation policies?"
 
-6. **User receives accurate answer:**
-    Factual, company-grounded
+**🔍 Step 1 - Retrieval:** System searches the knowledge base and finds the HR manual section:
+```
+"Employees receive 15 vacation days per year. Unused days can be rolled over 
+to the next year, up to a maximum of 5 days. Requests must be submitted 2 
+weeks in advance."
+```
+
+**➕ Step 2 - Augmentation:** The system creates an enhanced prompt:
+```
+Based on the following context, answer the question accurately:
+
+Context: [Retrieved HR policy text]
+
+Question: What are the company vacation policies?
+```
+
+**✍️ Step 3 - Generation:** The LLM produces a clear, accurate answer:
+```
+"According to company policy, employees get 15 vacation days annually. You can 
+roll over up to 5 unused days to next year. Remember to submit requests at 
+least 2 weeks ahead!"
+```
+
+**✅ Result:** Factual, company-specific answer grounded in real documents!
 
 ---
 

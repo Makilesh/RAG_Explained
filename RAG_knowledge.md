@@ -1,5 +1,41 @@
 # 📖 RAG Knowledge Base
 
+## 🎯 Common RAG Use Cases
+
+### Business Applications
+
+**🤖 Specialized Chatbots & Virtual Assistants**
+- Customer support with company-specific knowledge
+- Internal employee helpdesks
+- Product recommendation engines
+
+**📊 Research & Analysis**
+- Query large document collections instantly
+- Legal document analysis
+- Academic research assistance
+
+**✍️ Content Generation**
+- Create content grounded in specific sources
+- Report generation from data
+- Automated documentation
+
+**📈 Market Analysis & Product Development**
+- Analyze market research documents for insights
+- Competitive intelligence gathering
+- Customer feedback analysis
+
+**🔍 Knowledge Engines**
+- Enterprise search with intelligent answers
+- Technical documentation search
+- Compliance and regulatory query systems
+
+**💡 Recommendation Services**
+- Personalized suggestions based on user data
+- Context-aware product recommendations
+- Content discovery platforms
+
+---
+
 ## 🔄 How RAG Differs from Traditional QA
 
 | Feature | Traditional LLM QA | RAG |
@@ -13,6 +49,44 @@
 | **Privacy** | Data sent to model | Can run locally |
 
 **Key Advantage:** RAG combines the reasoning power of LLMs with the factual accuracy of retrieval systems, giving you the best of both worlds.
+
+---
+
+## 📊 RAG System Architecture
+
+This diagram shows the complete technical flow of a RAG system:
+
+```mermaid
+graph TD
+    A[📄 Input Documents] --> B[✂️ Split into Chunks]
+    B --> C[🔢 Create Embeddings]
+    C --> D[🗄️ Store in Vector Database]
+    
+    E[❓ User Question] --> F[🔍 Query Embedding]
+    F --> G[🎯 Similarity Search]
+    G --> H[📋 Retrieve Top Documents]
+    
+    H --> I[✍️ Generate Response]
+    D --> G
+    
+    I --> J[💬 Final Answer]
+    
+    style A fill:#e3f2fd,stroke:#1565c0,stroke-width:2px,color:#000
+    style B fill:#bbdefb,stroke:#1565c0,stroke-width:2px,color:#000
+    style C fill:#90caf9,stroke:#1565c0,stroke-width:2px,color:#000
+    style D fill:#64b5f6,stroke:#1565c0,stroke-width:2px,color:#000
+    style E fill:#b2ebf2,stroke:#00838f,stroke-width:2px,color:#000
+    style F fill:#80deea,stroke:#00838f,stroke-width:2px,color:#000
+    style G fill:#4dd0e1,stroke:#00838f,stroke-width:2px,color:#000
+    style H fill:#26c6da,stroke:#00838f,stroke-width:2px,color:#000
+    style I fill:#a5d6a7,stroke:#2e7d32,stroke-width:2px,color:#000
+    style J fill:#81c784,stroke:#2e7d32,stroke-width:2px,color:#000
+```
+
+**Key Components:**
+- **Document Processing Pipeline** (Blue): Ingests and indexes your knowledge base
+- **Query Processing Pipeline** (Cyan): Handles user questions in real-time
+- **Response Generation** (Green): Combines retrieved context with LLM capabilities
 
 ---
 
