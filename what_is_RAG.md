@@ -21,6 +21,36 @@ RAG involves three fundamental steps:
 
 ---
 
+
+## How RAG Actually Works: The 5-Step Pipeline
+
+While RAG has three core concepts, the implementation involves five detailed steps:
+
+```mermaid
+graph TD
+    A[📄 Document Ingestion] --> B[🔢 Embedding Creation]
+    B --> C[🔍 Retrieval]
+    C --> D[➕ Augmentation]
+    D --> E[✍️ Generation]
+    style A fill:#e3f2fd,stroke:#1565c0,stroke-width:2px,color:#000
+    style B fill:#bbdefb,stroke:#1565c0,stroke-width:2px,color:#000
+    style C fill:#b2ebf2,stroke:#00838f,stroke-width:2px,color:#000
+    style D fill:#a5d6a7,stroke:#2e7d32,stroke-width:2px,color:#000
+    style E fill:#81c784,stroke:#2e7d32,stroke-width:2px,color:#000
+```
+
+1. **Document Ingestion** - Load your source materials (like PDFs, text files, or knowledge bases) into the system
+
+2. **Embedding Creation** - Convert each document into dense vector representations (embeddings) which capture semantic meaning
+
+3. **Retrieval** - Search for the most relevant documents based on a user's question
+
+4. **Augmentation** - Combine the user's question with the retrieved information to create a powerful prompt
+
+5. **Generation** - Pass the augmented prompt to a language model, which produces a clear and accurate answer
+
+---
+
 ## 📊 RAG Visual Flow Diagram
 
 ```mermaid
@@ -49,35 +79,6 @@ graph TD
     style I fill:#a5d6a7,stroke:#2e7d32,stroke-width:2px,color:#000
     style J fill:#81c784,stroke:#2e7d32,stroke-width:2px,color:#000
 ```
-
----
-
-## How RAG Actually Works: The 5-Step Pipeline
-
-While RAG has three core concepts, the implementation involves five detailed steps:
-
-```mermaid
-graph TD
-    A[📄 Document Ingestion] --> B[🔢 Embedding Creation]
-    B --> C[🔍 Retrieval]
-    C --> D[➕ Augmentation]
-    D --> E[✍️ Generation]
-    style A fill:#e3f2fd,stroke:#1565c0,stroke-width:2px,color:#000
-    style B fill:#bbdefb,stroke:#1565c0,stroke-width:2px,color:#000
-    style C fill:#b2ebf2,stroke:#00838f,stroke-width:2px,color:#000
-    style D fill:#a5d6a7,stroke:#2e7d32,stroke-width:2px,color:#000
-    style E fill:#81c784,stroke:#2e7d32,stroke-width:2px,color:#000
-```
-
-1. **Document Ingestion** - Load your source materials (like PDFs, text files, or knowledge bases) into the system
-
-2. **Embedding Creation** - Convert each document into dense vector representations (embeddings) which capture semantic meaning
-
-3. **Retrieval** - Search for the most relevant documents based on a user's question
-
-4. **Augmentation** - Combine the user's question with the retrieved information to create a powerful prompt
-
-5. **Generation** - Pass the augmented prompt to a language model, which produces a clear and accurate answer
 
 ---
 
