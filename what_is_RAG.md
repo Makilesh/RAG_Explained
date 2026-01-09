@@ -53,29 +53,30 @@ graph TD
 
 ## Why is RAG Important?
 
-**🎯 Improves Accuracy** - Pulls real facts from your data sources, reducing hallucinations (made-up answers)
 
-**🔧 Highly Flexible** - Works with any set of documents (company manuals, research papers, or personal notes)
+**Improves Accuracy** - Pulls real facts from your data sources, reducing hallucinations (made-up answers)
 
-**✅ More Reliable** - Combines the reasoning power of LLMs with the factual strength of external knowledge
+**Highly Flexible** - Works with any set of documents (company manuals, research papers, or personal notes)
 
-**💰 Cost-Effective** - Update knowledge by simply adding documents instead of expensive model retraining
+**More Reliable** - Combines the reasoning power of LLMs with the factual strength of external knowledge
 
-**🔒 Privacy-Friendly** - Run locally with your sensitive data without sending it to external APIs
+**Cost-Effective** - Update knowledge by simply adding documents instead of expensive model retraining
+
+**Privacy-Friendly** - Run locally with your sensitive data without sending it to external APIs
 
 ### Key Challenges RAG Solves
 
-**🎭 The Hallucination Problem** - LLMs often "make things up." RAG grounds responses in real documents
+**The Hallucination Problem** - LLMs often "make things up." RAG grounds responses in real documents
 
-**📅 Knowledge Cutoffs** - Models stop at a certain training date. RAG enables access to recent information
+**Knowledge Cutoffs** - Models stop at a certain training date. RAG enables access to recent information
 
-**🔐 Private Data Access** - RAG allows integration with your own custom datasets that weren't in the model's training data
+**Private Data Access** - RAG allows integration with your own custom datasets that weren't in the model's training data
 
-**💵 Expensive Model Updates** - Instead of costly retraining, you just update the knowledge base documents
+**Expensive Model Updates** - Instead of costly retraining, you just update the knowledge base documents
 
 ---
 
-## 🚀 Common Use Cases
+## Common Use Cases
 
 - **Customer Support Bots** - Answer questions using company documentation
 - **Research Assistants** - Query through academic papers and reports
@@ -86,20 +87,20 @@ graph TD
 
 ---
 
-## 💡 Real-World Example: RAG in Action
+## Real-World Example: RAG in Action
 
 Let's see how RAG handles a question about company policies:
 
-**❓ User asks:** "What are the company vacation policies?"
+**User asks:** "What are the company vacation policies?"
 
-**🔍 Step 1 - Retrieval:** System searches the knowledge base and finds the HR manual section:
+**Step 1 - Retrieval:** System searches the knowledge base and finds the HR manual section:
 ```
 "Employees receive 15 vacation days per year. Unused days can be rolled over 
 to the next year, up to a maximum of 5 days. Requests must be submitted 2 
 weeks in advance."
 ```
 
-**➕ Step 2 - Augmentation:** The system creates an enhanced prompt:
+**Step 2 - Augmentation:** The system creates an enhanced prompt:
 ```
 Based on the following context, answer the question accurately:
 
@@ -108,14 +109,14 @@ Context: [Retrieved HR policy text]
 Question: What are the company vacation policies?
 ```
 
-**✍️ Step 3 - Generation:** The LLM produces a clear, accurate answer:
+**Step 3 - Generation:** The LLM produces a clear, accurate answer:
 ```
 "According to company policy, employees get 15 vacation days annually. You can 
 roll over up to 5 unused days to next year. Remember to submit requests at 
 least 2 weeks ahead!"
 ```
 
-**✅ Result:** Factual, company-specific answer grounded in real documents!
+**Result:** Factual, company-specific answer grounded in real documents!
 
 ---
 

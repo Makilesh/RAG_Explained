@@ -1,10 +1,10 @@
-# 📖 RAG Knowledge Base
+# RAG Knowledge Base
 
-## 🎯 Common RAG Use Cases
+## Common RAG Use Cases
 
 ### Business Applications
 
-**🤖 Specialized Chatbots & Virtual Assistants**
+**Specialized Chatbots & Virtual Assistants**
 - Customer support with company-specific knowledge
 - Internal employee helpdesks
 - Product recommendation engines
@@ -24,19 +24,19 @@
 - Competitive intelligence gathering
 - Customer feedback analysis
 
-**🔍 Knowledge Engines**
+**Knowledge Engines**
 - Enterprise search with intelligent answers
 - Technical documentation search
 - Compliance and regulatory query systems
 
-**💡 Recommendation Services**
+**Recommendation Services**
 - Personalized suggestions based on user data
 - Context-aware product recommendations
 - Content discovery platforms
 
 ---
 
-## 🔄 How RAG Differs from Traditional QA
+## How RAG Differs from Traditional QA
 
 | Feature | Traditional LLM QA | RAG |
 |---------|-------------------|-----|
@@ -52,7 +52,7 @@
 
 ---
 
-## 📊 RAG System Architecture
+## RAG System Architecture
 
 This diagram shows the complete technical flow of a RAG system:
 
@@ -142,53 +142,53 @@ graph TD
 
 ---
 
-## ⚠️ Common Pitfalls & Best Practices
+## Common Pitfalls & Best Practices
 
 ### Pitfalls to Avoid
 
-❌ **Chunk Size Issues**
+**Chunk Size Issues**
 - Too large: Irrelevant info dilutes context
 - Too small: Lose important context
 - **Fix:** Start with 500-1000 characters, adjust based on your data
 
-❌ **Poor Retrieval Quality**
+**Poor Retrieval Quality**
 - Using wrong similarity metric
 - Not enough retrieved documents
 - **Fix:** Retrieve top 3-5 docs, experiment with cosine vs. L2 distance
 
-❌ **Ignoring Metadata**
+**Ignoring Metadata**
 - Missing document source, date, author
 - **Fix:** Always store metadata with embeddings for better filtering
 
-❌ **Not Testing Retrieval Separately**
+**Not Testing Retrieval Separately**
 - Assuming retrieval works without verification
 - **Fix:** Test retrieval independently before adding generation
 
-❌ **Overloading Context Window**
+**Overloading Context Window**
 - Sending too much retrieved text to the LLM
 - **Fix:** Summarize or re-rank retrieved docs before generation
 
 ### Best Practices
 
-✅ **Hybrid Search** - Combine semantic (embeddings) with keyword search for best results
+**Hybrid Search** - Combine semantic (embeddings) with keyword search for best results
 
-✅ **Re-ranking** - Use a cross-encoder to re-rank retrieved documents for better relevance
+**Re-ranking** - Use a cross-encoder to re-rank retrieved documents for better relevance
 
-✅ **Cite Sources** - Always include source references in generated responses
+**Cite Sources** - Always include source references in generated responses
 
-✅ **Evaluation Metrics** - Track retrieval precision, answer accuracy, and latency
+**Evaluation Metrics** - Track retrieval precision, answer accuracy, and latency
 
-✅ **Incremental Updates** - Design your system to add new documents without full reprocessing
+**Incremental Updates** - Design your system to add new documents without full reprocessing
 
-✅ **Prompt Engineering** - Craft clear instructions: "Based on the context provided, answer..."
+**Prompt Engineering** - Craft clear instructions: "Based on the context provided, answer..."
 
-✅ **Caching** - Cache embeddings and frequent queries to reduce costs and improve speed
+**Caching** - Cache embeddings and frequent queries to reduce costs and improve speed
 
 ---
 
-## �📚 Resources & Further Reading
+## Resources & Further Reading
 
-### Essential Books 📖
+### Essential Books
 
 **1. "Hands-On Machine Learning" by Aurélien Géron**
    - Great for understanding the ML fundamentals behind RAG
@@ -199,7 +199,7 @@ graph TD
 **3. "Building LLM Applications for Production" by Valentine Malykh**
    - Production-ready AI systems
 
-### Research Papers 📄
+### Research Papers
 
 **1. "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks" (Lewis et al., 2020)**
    - The original RAG paper from Meta AI
@@ -213,7 +213,7 @@ graph TD
    - Foundation for modern retrieval systems
    - Link: https://arxiv.org/abs/2004.04906
 
-### Blogs & Tutorials 📝
+### Blogs & Tutorials
 
 **1. LangChain Documentation**
    - Comprehensive guides and examples
@@ -227,7 +227,7 @@ graph TD
    - Free course covering embeddings and retrieval
    - Link: https://huggingface.co/learn/nlp-course/
 
-### Video Resources 🎥
+### Video Resources
 
 **1. "Building Production-Ready RAG Applications" by LangChain**
    - Practical implementation strategies
@@ -238,7 +238,7 @@ graph TD
 **3. "RAG from Scratch" by DeepLearning.AI**
    - Step-by-step video series
 
-### Tools & Playgrounds 🔧
+### Tools & Playgrounds
 
 **1. LangChain Templates** - Pre-built RAG applications
    - Link: https://github.com/langchain-ai/langchain/tree/master/templates
@@ -255,7 +255,7 @@ graph TD
 
 This tutorial is open source and we'd love your help making it better!
 
-### How to Contribute 🌟
+### How to Contribute
 
 **1. Found a bug?**
    - Open an issue describing the problem
@@ -272,7 +272,7 @@ This tutorial is open source and we'd love your help making it better!
    - Additional troubleshooting tips
    - Support for more file types or libraries
 
-### Contribution Guidelines 📋
+### Contribution Guidelines
 - Keep the beginner-friendly tone
 - Test your code before submitting
 - Add comments and explanations

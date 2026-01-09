@@ -16,11 +16,11 @@ Ever wondered how ChatGPT could answer questions about *your* documents? That's 
 - [`RAG_knowledge.md`](RAG_knowledge.md) - Advanced stuff and FAQs
 
 **Quick access:**
-- 📖 [What is RAG?](what_is_RAG.md) - Start here for concepts
-- 📓 [Step-by-step Notebook](How_does_RAG_work.ipynb) - Interactive learning
-- 🚀 [Complete Implementation](Complete_RAG_implementation.py) - Production code
-- 📚 [Advanced Guide](RAG_knowledge.md) - Deep dive & FAQs
-- 📄 [Sample Data](knowledge.txt) - Test knowledge base
+- [What is RAG?](what_is_RAG.md) - Start here for concepts
+- [Step-by-step Notebook](How_does_RAG_work.ipynb) - Interactive learning
+- [Complete Implementation](Complete_RAG_implementation.py) - Production code
+- [Advanced Guide](RAG_knowledge.md) - Deep dive & FAQs
+- [Sample Data](knowledge.txt) - Test knowledge base
 
 ---
 
@@ -75,15 +75,15 @@ $ python Complete_RAG_implementation.py
 
 Enter your question: What do elephants use their trunks for?
 
-🔎 Retrieved: Elephants use their trunks for smelling, breathing, trumpeting, drinking, and grabbing things.
+Retrieved: Elephants use their trunks for smelling, breathing, trumpeting, drinking, and grabbing things.
 
-📝 Augmented Prompt:
+Augmented Prompt:
 Based on this info: Elephants use their trunks for smelling, breathing, trumpeting, drinking, and grabbing things.
 Answer the question: What do elephants use their trunks for?
 
 Use Gemini API for generation? (y/n, default n): y
 
-💡 Final Answer (Gemini):
+Final Answer (Gemini):
 Elephants use their trunks for smelling, breathing, trumpeting, drinking, and grabbing things.
 ```
 
