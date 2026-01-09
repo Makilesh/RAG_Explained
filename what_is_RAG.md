@@ -21,6 +21,36 @@ RAG involves three fundamental steps:
 
 ---
 
+## 📊 RAG Visual Flow Diagram
+
+```mermaid
+graph TD
+    A[📄 Input Documents] --> B[✂️ Split into Chunks]
+    B --> C[🔢 Create Embeddings]
+    C --> D[🗄️ Store in Vector Database]
+    
+    E[❓ User Question] --> F[🔍 Query Embedding]
+    F --> G[🎯 Similarity Search]
+    G --> H[📋 Retrieve Top Documents]
+    
+    H --> I[✍️ Generate Response]
+    D --> G
+    
+    I --> J[💬 Final Answer]
+    
+    style A fill:#e3f2fd,stroke:#1565c0,stroke-width:2px,color:#000
+    style B fill:#bbdefb,stroke:#1565c0,stroke-width:2px,color:#000
+    style C fill:#90caf9,stroke:#1565c0,stroke-width:2px,color:#000
+    style D fill:#64b5f6,stroke:#1565c0,stroke-width:2px,color:#000
+    style E fill:#b2ebf2,stroke:#00838f,stroke-width:2px,color:#000
+    style F fill:#80deea,stroke:#00838f,stroke-width:2px,color:#000
+    style G fill:#4dd0e1,stroke:#00838f,stroke-width:2px,color:#000
+    style H fill:#26c6da,stroke:#00838f,stroke-width:2px,color:#000
+    style I fill:#a5d6a7,stroke:#2e7d32,stroke-width:2px,color:#000
+    style J fill:#81c784,stroke:#2e7d32,stroke-width:2px,color:#000
+```
+
+---
 
 ## How RAG Actually Works: The 5-Step Pipeline
 
