@@ -15,13 +15,6 @@ Ever wondered how ChatGPT could answer questions about *your* documents? That's 
 - [`knowledge.txt`](knowledge.txt) - Your test data
 - [`RAG_knowledge.md`](RAG_knowledge.md) - Advanced stuff and FAQs
 
-**Quick access:**
-- [What is RAG?](what_is_RAG.md) - Start here for concepts
-- [Step-by-step Notebook](How_does_RAG_work.ipynb) - Interactive learning
-- [Complete Implementation](Complete_RAG_implementation.py) - Production code
-- [Advanced Guide](RAG_knowledge.md) - Deep dive & FAQs
-- [Sample Data](knowledge.txt) - Test knowledge base
-
 ---
 
 ## Contents
